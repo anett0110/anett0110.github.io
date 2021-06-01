@@ -1,0 +1,8 @@
+// v1.0.1 (16.03.2017)
+[New] Portfolio Design
+[New] One Page Design
+[New] Navigation Design (tab/transparent)
+[New] Sticky options on window scroll
+
+// v1.0.0 (28.02.2017)
+[new] - Initial release
