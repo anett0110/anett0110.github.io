@@ -5567,6 +5567,29 @@ yx-axis
     line-height: 1.875em;
 }
 
+.award-box {
+  height: 475px;
+}
+
+
+@media (max-width: 1030px) {
+  .award-box {
+    height: 600px;
+  }
+}
+
+@media (max-width: 990px) {
+  .award-box {
+    height: 475px;
+  }
+}
+
+
+
+.omsz {
+  height: 250px
+}
+
 .award-img {
     display: flex;
     justify-content: center;
@@ -5591,9 +5614,10 @@ yx-axis
 }
 
 .award-title {
+    height: 40px;
     font-size: 1.125em;
     margin-top: 0;
-    margin-bottom: 25px;
+    margin-bottom: 0px;
     text-align: center;
 }
 
@@ -6632,7 +6656,7 @@ h1, h2, h3, h4, h5, h6 {
 .icon-list .crt-icon,
 .post-title a:hover,
 .crt-nav-type1 .crt-nav li.current a {
-    color: #c0e3e7;
+    color: #BBE7D0;
 }
 
 mark,
@@ -6650,7 +6674,7 @@ mark,
 #crt-main-nav .sub-menu li > a:hover,
 #crt-main-nav .sub-menu .current > a,
 #crt-main-nav-sm .sub-menu:before {
-    background-color: #c0e3e7;
+    background-color: #BBE7D0;
 }
 
 .btn-share,
@@ -6659,19 +6683,19 @@ mark,
 .progress-bullets .bullet,
 .education-date:after,
 .education-date:before {
-    border-color: #c0e3e7;
+    border-color: #BBE7D0;
 }
 
 ::-moz-selection {
-    background-color: #c0e3e7;
+    background-color: #BBE7D0;
 }
 
 ::selection {
-    background-color: #c0e3e7;
+    background-color: #BBE7D0;
 }
 
 #crt-bg-shape-2 polygon {
-    fill: #c0e3e7;
+    fill: #BBE7D0;
 }
 
 /* Color Darkest */
@@ -6776,19 +6800,19 @@ blockquote,
 .widget ol li,
 .widget_tag_cloud .tagcloud a,
 .post-category-comment a {
-    border-color: #e1e1e1;
+    border-color: #E8BCBD;
 }
 
 .crt-nav-btm:after {
-    background-color: #e1e1e1;
+    background-color: #E8BCBD;
 }
 
 .post-line {
-    color: #e1e1e1;
+    color: #E8BCBD;
 }
 
 #crt-bg-shape-1 polygon {
-    fill: #e1e1e1;
+    fill: #E8BCBD;
 }
 
 /* Color Light */
