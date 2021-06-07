@@ -163,7 +163,7 @@
         "isMulticolor": false,
         "isMulticolor2": false,
         "tags": [
-          "Portfólió"
+          "portfolio"
         ],
         "grid": 0
       },
@@ -173,7 +173,7 @@
       "properties": {
         "order": 682,
         "id": 3,
-        "name": "Portfólió",
+        "name": "portfolio",
         "prevSize": 32,
         "code": 59650
       },

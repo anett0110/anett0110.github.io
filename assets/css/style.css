@@ -6723,37 +6723,37 @@ blockquote.quote-side:before,
 .widget_categories li a,
 .widget_posts_entries li h3,
 .widget_posts_entries a {
-    color: #010101;
+    color: #127AA1;
 }
 
 ::-moz-selection {
-    color: #010101;
+    color: #127AA1;
 }
 
 ::selection {
-    color: #010101;
+    color: #127AA1;
 }
 
 ::-webkit-input-placeholder {
-    color: #010101;
+    color: #127AA1;
 }
 
 ::-moz-placeholder {
-    color: #010101;
+    color: #127AA1;
 }
 
 :-ms-input-placeholder {
-    color: #010101;
+    color: #127AA1;
 }
 
 :-moz-placeholder {
-    color: #010101;
+    color: #127AA1;
 }
 
 .text-dropcup-sq,
 .styled-ul li:before,
 .education-box:before {
-    background-color: #010101;
+    background-color: #127AA1;
 }
 
 /* Color Darker */

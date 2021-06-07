@@ -51,7 +51,7 @@
 				<ul class="clearfix">
 					<li><a href="index.html#about">About</a></li>
 					<li><a href="index.html#skills">Skills</a></li>
-					<li><a href="index.html#Portfólió">Portfólió</a> </li>
+					<li><a href="index.html#portfolio">portfolio</a> </li>
 					<li><a href="index.html#experience">Experience</a></li>
 					<li><a href="index.html#references">References</a></li>
 					<li>
@@ -232,7 +232,7 @@
 									<ul class="clearfix">
 										<li><a href="index.html#about">About</a></li>
 										<li><a href="index.html#skills">Skills</a></li>
-										<li><a href="index.html#Portfólió">Portfólió</a> </li>
+										<li><a href="index.html#portfolio">portfolio</a> </li>
 										<li><a href="index.html#experience">Experience</a></li>
 										<li><a href="index.html#references">References</a></li>
 										<li>

@@ -634,12 +634,12 @@ certy.carousel = function(carousel){
 
 
 /**
- * Certy Portfólió
+ * Certy portfolio
  */
 
-certy.Portfólió = {};
+certy.portfolio = {};
 
-certy.Portfólió.initGrid = function(el){
+certy.portfolio.initGrid = function(el){
     // isotope initialization
     var grid = el.isotope({
         isOriginLeft: !certy.vars.rtl,
@@ -673,11 +673,11 @@ certy.Portfólió.initGrid = function(el){
     }
 };
 
-certy.Portfólió.openPopup = function(el){
+certy.portfolio.openPopup = function(el){
     // add opened class on html
-    certy.vars.html.addClass('cr-Portfólió-opened');
+    certy.vars.html.addClass('cr-portfolio-opened');
 
-    // append Portfólió popup
+    // append portfolio popup
     this.popup_wrapper = $('<div id="pf-popup-wrap">'+
         '<div class="pf-popup-inner">'+
         '<div class="pf-popup-middle">'+
@@ -691,7 +691,7 @@ certy.Portfólió.openPopup = function(el){
 
     certy.vars.body.append( this.popup_wrapper );
 
-    // add Portfólió popup content
+    // add portfolio popup content
     this.popup_content = $('#pf-popup-content');
     this.popup_content.append( el.clone() );
 
@@ -708,22 +708,22 @@ certy.Portfólió.openPopup = function(el){
         slidesToScroll: 3
     });
 
-    // make Portfólió popup visible
+    // make portfolio popup visible
     this.popup_wrapper.addClass('pf-opened');
 
     // lock window scroll
     certy.lockScroll();
 };
 
-certy.Portfólió.closePopup = function(el){
+certy.portfolio.closePopup = function(el){
     // remove opened class from html
-    certy.vars.html.removeClass('cr-Portfólió-opened');
+    certy.vars.html.removeClass('cr-portfolio-opened');
 
-    // make Portfólió popup invisible
+    // make portfolio popup invisible
     this.popup_wrapper.removeClass('pf-opened');
 
     setTimeout(function(){
-        certy.Portfólió.popup_wrapper.remove();
+        certy.portfolio.popup_wrapper.remove();
         certy.unlockScroll();
     }, 500);
 };
@@ -772,30 +772,30 @@ certy.Portfólió.closePopup = function(el){
          */
         certy.sideBox.makeSticky();
 
-        /** Portfólió */
+        /** portfolio */
         var pf_grid = $('.pf-grid');
 
         if (pf_grid.length > 0) {
 
-            // init Portfólió grid
-            certy.Portfólió.initGrid(pf_grid);
+            // init portfolio grid
+            certy.portfolio.initGrid(pf_grid);
 
-            // open Portfólió popup
+            // open portfolio popup
             $(document).on('click', '.pf-project', function() {
                 var id = $(this).attr('href');
 
-                certy.Portfólió.openPopup( $(id) );
+                certy.portfolio.openPopup( $(id) );
 
                 return false;
             });
 
-            // close Portfólió popup
-            $(document).on('touchstart click', '.cr-Portfólió-opened #pf-popup-wrap', function (e) {
+            // close portfolio popup
+            $(document).on('touchstart click', '.cr-portfolio-opened #pf-popup-wrap', function (e) {
                 var container = $('#pf-popup-content');
 
                 // if the target of the click isn't the container... nor a descendant of the container
                 if (!container.is(e.target) && container.has(e.target).length === 0) {
-                    certy.Portfólió.closePopup();
+                    certy.portfolio.closePopup();
                 }
             });
         }
@@ -1078,7 +1078,7 @@ $(function () { // start: document ready
     });
 
     /**
-     * Portfólió Popup
+     * portfolio Popup
      */
     var pf_popup = {};
     pf_popup.wrapper = null;
@@ -1086,7 +1086,7 @@ $(function () { // start: document ready
     pf_popup.slider = null;
 
     pf_popup.open = function ( el ){
-        // Append Portfólió Popup
+        // Append portfolio Popup
         this.wrapper = $('<div id="pf-popup-wrap" class="pf-popup-wrap">'+
         '<div class="pf-popup-inner">'+
         '<div class="pf-popup-middle">'+
@@ -1099,11 +1099,11 @@ $(function () { // start: document ready
 
         ace.body.append(this.wrapper);
 
-        // Add Portfólió Popup Items
+        // Add portfolio Popup Items
         this.content = $('#pf-popup-content');
         this.content.append( el.clone() );
 
-        // Make Portfólió Popup Visible
+        // Make portfolio Popup Visible
         pf_popup.wrapper.addClass('opened');
         ace_lock_scroll();
     };
@@ -1116,24 +1116,24 @@ $(function () { // start: document ready
         }, 500);
     };
 
-    // Open Portfólió Popup
+    // Open portfolio Popup
     $(document).on('click', '.pf-btn-view', function() {
         var id = $(this).attr('href');
         pf_popup.open( $(id) );
 
-        ace.html.addClass('crt-Portfólió-opened');
+        ace.html.addClass('crt-portfolio-opened');
 
         return false;
     });
 
-    // Close Portfólió Popup
-    $(document).on('touchstart click', '.crt-Portfólió-opened #pf-popup-wrap', function (e) {
+    // Close portfolio Popup
+    $(document).on('touchstart click', '.crt-portfolio-opened #pf-popup-wrap', function (e) {
         var container = $('#pf-popup-content');
 
         // if the target of the click isn't the container... nor a descendant of the container
         if (!container.is(e.target) && container.has(e.target).length === 0) {
             pf_popup.close();
-            ace.html.removeClass('crt-Portfólió-opened');
+            ace.html.removeClass('crt-portfolio-opened');
         }
     });
 
