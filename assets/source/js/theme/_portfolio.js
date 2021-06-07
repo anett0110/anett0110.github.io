@@ -1,10 +1,10 @@
 /**
- * Certy Portfolio
+ * Certy Portfólió
  */
 
-certy.portfolio = {};
+certy.Portfólió = {};
 
-certy.portfolio.initGrid = function(el){
+certy.Portfólió.initGrid = function(el){
     // isotope initialization
     var grid = el.isotope({
         isOriginLeft: !certy.vars.rtl,
@@ -38,11 +38,11 @@ certy.portfolio.initGrid = function(el){
     }
 };
 
-certy.portfolio.openPopup = function(el){
+certy.Portfólió.openPopup = function(el){
     // add opened class on html
-    certy.vars.html.addClass('cr-portfolio-opened');
+    certy.vars.html.addClass('cr-Portfólió-opened');
 
-    // append portfolio popup
+    // append Portfólió popup
     this.popup_wrapper = $('<div id="pf-popup-wrap">'+
         '<div class="pf-popup-inner">'+
         '<div class="pf-popup-middle">'+
@@ -56,7 +56,7 @@ certy.portfolio.openPopup = function(el){
 
     certy.vars.body.append( this.popup_wrapper );
 
-    // add portfolio popup content
+    // add Portfólió popup content
     this.popup_content = $('#pf-popup-content');
     this.popup_content.append( el.clone() );
 
@@ -73,22 +73,22 @@ certy.portfolio.openPopup = function(el){
         slidesToScroll: 3
     });
 
-    // make portfolio popup visible
+    // make Portfólió popup visible
     this.popup_wrapper.addClass('pf-opened');
 
     // lock window scroll
     certy.lockScroll();
 };
 
-certy.portfolio.closePopup = function(el){
+certy.Portfólió.closePopup = function(el){
     // remove opened class from html
-    certy.vars.html.removeClass('cr-portfolio-opened');
+    certy.vars.html.removeClass('cr-Portfólió-opened');
 
-    // make portfolio popup invisible
+    // make Portfólió popup invisible
     this.popup_wrapper.removeClass('pf-opened');
 
     setTimeout(function(){
-        certy.portfolio.popup_wrapper.remove();
+        certy.Portfólió.popup_wrapper.remove();
         certy.unlockScroll();
     }, 500);
 };

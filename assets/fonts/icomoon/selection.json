@@ -163,7 +163,7 @@
         "isMulticolor": false,
         "isMulticolor2": false,
         "tags": [
-          "portfolio"
+          "Portfólió"
         ],
         "grid": 0
       },
@@ -173,7 +173,7 @@
       "properties": {
         "order": 682,
         "id": 3,
-        "name": "portfolio",
+        "name": "Portfólió",
         "prevSize": 32,
         "code": 59650
       },
@@ -221,7 +221,7 @@
         "isMulticolor": false,
         "isMulticolor2": false,
         "tags": [
-          "contact"
+          "Kapcsolat"
         ],
         "grid": 0
       },
@@ -231,7 +231,7 @@
       "properties": {
         "order": 680,
         "id": 5,
-        "name": "contact",
+        "name": "Kapcsolat",
         "prevSize": 32,
         "code": 59652
       },
@@ -250,7 +250,7 @@
         "isMulticolor": false,
         "isMulticolor2": false,
         "tags": [
-          "blog"
+          "Blog"
         ],
         "grid": 0
       },
@@ -260,7 +260,7 @@
       "properties": {
         "order": 679,
         "id": 6,
-        "name": "blog",
+        "name": "Blog",
         "prevSize": 32,
         "code": 59653
       },
@@ -1103,14 +1103,14 @@
         "isMulticolor": false,
         "isMulticolor2": false,
         "tags": [
-          "home"
+          "Beköszönő"
         ],
         "defaultCode": 61461,
         "grid": 14
       },
       "attrs": [],
       "properties": {
-        "name": "home",
+        "name": "Beköszönő",
         "id": 24,
         "order": 26,
         "prevSize": 28,
@@ -5960,7 +5960,7 @@
         "isMulticolor2": false,
         "tags": [
           "dashboard",
-          "tachometer"
+          "tacBeköszönőter"
         ],
         "defaultCode": 61668,
         "grid": 14

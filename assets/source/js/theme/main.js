@@ -42,30 +42,30 @@
          */
         certy.sideBox.makeSticky();
 
-        /** Portfolio */
+        /** Portfólió */
         var pf_grid = $('.pf-grid');
 
         if (pf_grid.length > 0) {
 
-            // init portfolio grid
-            certy.portfolio.initGrid(pf_grid);
+            // init Portfólió grid
+            certy.Portfólió.initGrid(pf_grid);
 
-            // open portfolio popup
+            // open Portfólió popup
             $(document).on('click', '.pf-project', function() {
                 var id = $(this).attr('href');
 
-                certy.portfolio.openPopup( $(id) );
+                certy.Portfólió.openPopup( $(id) );
 
                 return false;
             });
 
-            // close portfolio popup
-            $(document).on('touchstart click', '.cr-portfolio-opened #pf-popup-wrap', function (e) {
+            // close Portfólió popup
+            $(document).on('touchstart click', '.cr-Portfólió-opened #pf-popup-wrap', function (e) {
                 var container = $('#pf-popup-content');
 
                 // if the target of the click isn't the container... nor a descendant of the container
                 if (!container.is(e.target) && container.has(e.target).length === 0) {
-                    certy.portfolio.closePopup();
+                    certy.Portfólió.closePopup();
                 }
             });
         }

@@ -222,7 +222,7 @@ $(function () { // start: document ready
     });
 
     /**
-     * Portfolio Popup
+     * Portfólió Popup
      */
     var pf_popup = {};
     pf_popup.wrapper = null;
@@ -230,7 +230,7 @@ $(function () { // start: document ready
     pf_popup.slider = null;
 
     pf_popup.open = function ( el ){
-        // Append Portfolio Popup
+        // Append Portfólió Popup
         this.wrapper = $('<div id="pf-popup-wrap" class="pf-popup-wrap">'+
         '<div class="pf-popup-inner">'+
         '<div class="pf-popup-middle">'+
@@ -243,11 +243,11 @@ $(function () { // start: document ready
 
         ace.body.append(this.wrapper);
 
-        // Add Portfolio Popup Items
+        // Add Portfólió Popup Items
         this.content = $('#pf-popup-content');
         this.content.append( el.clone() );
 
-        // Make Portfolio Popup Visible
+        // Make Portfólió Popup Visible
         pf_popup.wrapper.addClass('opened');
         ace_lock_scroll();
     };
@@ -260,24 +260,24 @@ $(function () { // start: document ready
         }, 500);
     };
 
-    // Open Portfolio Popup
+    // Open Portfólió Popup
     $(document).on('click', '.pf-btn-view', function() {
         var id = $(this).attr('href');
         pf_popup.open( $(id) );
 
-        ace.html.addClass('crt-portfolio-opened');
+        ace.html.addClass('crt-Portfólió-opened');
 
         return false;
     });
 
-    // Close Portfolio Popup
-    $(document).on('touchstart click', '.crt-portfolio-opened #pf-popup-wrap', function (e) {
+    // Close Portfólió Popup
+    $(document).on('touchstart click', '.crt-Portfólió-opened #pf-popup-wrap', function (e) {
         var container = $('#pf-popup-content');
 
         // if the target of the click isn't the container... nor a descendant of the container
         if (!container.is(e.target) && container.has(e.target).length === 0) {
             pf_popup.close();
-            ace.html.removeClass('crt-portfolio-opened');
+            ace.html.removeClass('crt-Portfólió-opened');
         }
     });
 

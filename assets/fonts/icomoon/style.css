@@ -38,16 +38,16 @@
 .crt-icon-references:before {
   content: "\e901";
 }
-.crt-icon-portfolio:before {
+.crt-icon-Portfólió:before {
   content: "\e902";
 }
 .crt-icon-experience:before {
   content: "\e903";
 }
-.crt-icon-contact:before {
+.crt-icon-Kapcsolat:before {
   content: "\e904";
 }
-.crt-icon-blog:before {
+.crt-icon-Blog:before {
   content: "\e905";
 }
 .crt-icon-arrow-page-up:before {
@@ -140,7 +140,7 @@
 .crt-icon-trash-o:before {
   content: "\f014";
 }
-.crt-icon-home:before {
+.crt-icon-Beköszönő:before {
   content: "\f015";
 }
 .crt-icon-file-o:before {
