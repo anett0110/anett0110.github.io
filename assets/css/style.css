@@ -6513,11 +6513,11 @@ yx-axis
     }
 }
 
-.Kapcsolat-head {
+.contact-head {
     margin-bottom: 55px;
 }
 
-.Kapcsolat-head .crt-social {
+.contact-head .crt-social {
     margin-bottom: 45px;
 }
 
@@ -6723,7 +6723,7 @@ blockquote.quote-side:before,
 .widget_categories li a,
 .widget_posts_entries li h3,
 .widget_posts_entries a {
-    color: #127AA1;
+    color: #010101;
 }
 
 ::-moz-selection {
@@ -6865,10 +6865,10 @@ blockquote.quote-side:before,
 /* Buttons */
 .btn-default {
     color: #fff;
-    background-color: #000;
+    background-color: #102B3F;
 }
 
 .btn-light {
-    color: #000;
+    color: #102B3F;
     background-color: #fff;
 }

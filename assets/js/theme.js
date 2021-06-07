@@ -1175,7 +1175,7 @@ $(function () { // start: document ready
 
 }); // end: document ready
 
-// Kapcsolat Form
+// contact Form
 $(function() {	
 	
 	function isValidEmail(emailAddress) {
@@ -1183,10 +1183,10 @@ $(function() {
         return pattern.test(emailAddress);
     };
 	
-	/** Kapcsolat Form */
+	/** contact Form */
 	$('.crtFormSubmit').on('click', function (e) {
 		
-		var crtForm = $(this).closest('.Kapcsolat-form');
+		var crtForm = $(this).closest('.contact-form');
 		var crtFormErrocrt = false;
 		var crtFormAction = crtForm.attr('action');	
 		var crtFormFields = crtForm.find('.form-group');		           	

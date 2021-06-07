@@ -70,7 +70,7 @@
 						</ul>
 					</li>
 					<li><a href="index.html#calendar">Calendar <span></span></a></li>
-					<li><a href="index.html#Kapcsolat">Kapcsolat <span></span></a></li>
+					<li><a href="index.html#contact">contact <span></span></a></li>
 				</ul>
 			</nav>
         </div>
@@ -101,40 +101,40 @@
                 </form>
             </aside><!-- .widget_search -->
 
-            <aside class="widget widget_Kapcsolat">
-                <h2 class="widget-title">Kapcsolat Me</h2>
-                <form class="KapcsolatForm" action="php/Kapcsolat_form.php" method="post">
+            <aside class="widget widget_contact">
+                <h2 class="widget-title">contact Me</h2>
+                <form class="contactForm" action="php/contact_form.php" method="post">
 					<div class="input-field">
-						<input class="Kapcsolat-name" type="text" name="name"/>
+						<input class="contact-name" type="text" name="name"/>
 						<span class="line"></span>
 						<label>Name</label>
 					</div>
 
 					<div class="input-field">
-						<input class="Kapcsolat-email" type="email" name="email"/>
+						<input class="contact-email" type="email" name="email"/>
 						<span class="line"></span>
 						<label>Email</label>
 					</div>
 
 					<div class="input-field">
-						<input class="Kapcsolat-subject" type="text" name="subject"/>
+						<input class="contact-subject" type="text" name="subject"/>
 						<span class="line"></span>
 						<label>Subject</label>
 					</div>
 
 					<div class="input-field">
-						<textarea class="Kapcsolat-message" rows="4" name="message"></textarea>
+						<textarea class="contact-message" rows="4" name="message"></textarea>
 						<span class="line"></span>
 						<label>Message</label>
 					</div>
 
 					<span class="btn-outer btn-primary-outer ripple">
-						<input class="Kapcsolat-submit btn btn-lg btn-primary" type="submit" value="Send"/>
+						<input class="contact-submit btn btn-lg btn-primary" type="submit" value="Send"/>
 					</span>
 					
-					<div class="Kapcsolat-response"></div>
+					<div class="contact-response"></div>
 				</form>
-            </aside><!-- .widget_Kapcsolat -->
+            </aside><!-- .widget_contact -->
 
             <aside class="widget widget-popuplar-posts">
                 <h2 class="widget-title">Popular posts</h2>
@@ -251,7 +251,7 @@
 											</ul>
 										</li>
 										<li><a href="index.html#calendar">Calendar <span></span></a></li>
-										<li><a href="index.html#Kapcsolat">Kapcsolat <span></span></a></li>
+										<li><a href="index.html#contact">contact <span></span></a></li>
 									</ul>
 								</nav>
 

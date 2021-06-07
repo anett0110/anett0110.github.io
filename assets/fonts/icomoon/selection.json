@@ -221,7 +221,7 @@
         "isMulticolor": false,
         "isMulticolor2": false,
         "tags": [
-          "Kapcsolat"
+          "contact"
         ],
         "grid": 0
       },
@@ -231,7 +231,7 @@
       "properties": {
         "order": 680,
         "id": 5,
-        "name": "Kapcsolat",
+        "name": "contact",
         "prevSize": 32,
         "code": 59652
       },
