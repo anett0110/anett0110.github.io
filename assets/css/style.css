@@ -6818,9 +6818,11 @@ blockquote,
 /* Color Light */
 body,
 .form-item,
-.search-form .search-field,
+.search-form .search-field {
+  background-color: #f3f3f3;
+}
 #crt-sidebar-btn {
-    background-color: #f3f3f3;
+    background-color: #102B3F;
 }
 
 /* Color Lighter */
