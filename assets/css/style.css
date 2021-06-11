@@ -6874,3 +6874,7 @@ blockquote.quote-side:before,
     color: #102B3F;
     background-color: #fff;
 }
+
+.clipboard {
+    display: inline;
+}

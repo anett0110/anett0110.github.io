@@ -1239,3 +1239,26 @@ $(function() {
 		}					                         
 	});
 })
+
+function fadeOut()
+{
+    $(".fadeout").fadeToggle(500, "swing",function(){
+        this.remove();
+    });
+}
+
+function copyToClipBoard() {
+    const el = document.createElement('textarea');
+    el.value = 'https://cv.anett.solutions';	//str is your string to copy
+    document.body.appendChild(el);
+    el.select();
+    document.execCommand('copy');	// Copy command
+    document.body.removeChild(el);
+
+    const alert = document.createElement('div');
+    alert.innerHTML='Webhely címe vágólapra helyezve :)';
+    alert.classList.add('alert', 'alert-success', 'fadeout', 'clipboard');
+    document.getElementById('sharebox').appendChild(alert)
+    var delay = 3000; //3 seconds
+    setTimeout(fadeOut, delay);
+}
