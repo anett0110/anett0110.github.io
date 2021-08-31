@@ -1256,9 +1256,9 @@ function copyToClipBoard() {
     document.body.removeChild(el);
 
     const alert = document.createElement('div');
-    alert.innerHTML='Webhely címe vágólapra helyezve :)';
+    alert.innerHTML='Webhely címe vágólapra helyezve.';
     alert.classList.add('alert', 'alert-success', 'fadeout', 'clipboard');
-    document.getElementById('sharebox').appendChild(alert)
+    document.getElementById('share-alert').appendChild(alert)
     var delay = 3000; //3 seconds
     setTimeout(fadeOut, delay);
 }

@@ -467,7 +467,7 @@ dd {
 
     .dl-horizontal dt {
         float: left;
-        width: 100px;
+        width: 250px;
         overflow: hidden;
         clear: left;
         text-overflow: ellipsis;
@@ -894,7 +894,10 @@ textarea.form-item {
     padding-left: 15px;
     padding-right: 15px;
 }
-
+.magic-col{
+    padding-top: 10px;
+    padding-left: 35px;
+}
 .col-xxs-1, .col-xxs-2, .col-xxs-3, .col-xxs-4, .col-xxs-5, .col-xxs-6, .col-xxs-7, .col-xxs-8, .col-xxs-9, .col-xxs-10, .col-xxs-11, .col-xxs-12 {
     float: left;
 }
@@ -1119,7 +1122,7 @@ textarea.form-item {
     }
 
     .col-sm-3 {
-        width: 25%;
+        width: 23%;
     }
 
     .col-sm-4 {
@@ -1143,7 +1146,7 @@ textarea.form-item {
     }
 
     .col-sm-9 {
-        width: 75%;
+        width: 77%;
     }
 
     .col-sm-10 {
@@ -2193,8 +2196,8 @@ img.aligncenter {
  * Alerts
  */
 .alert {
-    position: relative;
-    padding: 13px 30px 13px 15px;
+    position: absolute;
+    padding: 13px 15px 13px 15px;
     margin-bottom: 22px;
     border-radius: 4px;
 }
