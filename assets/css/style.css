@@ -2447,11 +2447,15 @@ img.aligncenter {
 .avatar-42 {
     width: 42px;
     height: 42px;
+    border-radius: 50%;
+    object-fit: cover;
 }
 
 .avatar-195 {
     width: 195px;
     height: 195px;
+    border-radius: 50%;
+    object-fit: cover;
 }
 
 /**
