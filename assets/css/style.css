@@ -4840,7 +4840,7 @@ yx-axis
     }
 
     .crt-side-box-on .crt-container-sm {
-        margin-left: 310px;
+        margin-right: 310px;
     }
 
     .crt-side-box-on .crt-container {
@@ -4854,7 +4854,7 @@ yx-axis
 
 @media (min-width: 1200px) {
     .crt-side-box-on .crt-container-sm {
-        margin-left: 330px;
+        margin-left: 70px;
     }
 }
 
@@ -4935,7 +4935,7 @@ yx-axis
 @media (min-width: 992px) {
     #crt-side-box-wrap {
         width: 290px;
-        float: left;
+        float: right;
     }
 
     .crt-side-box-item {
@@ -5201,7 +5201,7 @@ yx-axis
 }
 
 #crt-nav-wrap {
-    float: right;
+    float: left;
     right: 1px;
     z-index: 4;
     width: 56px;
