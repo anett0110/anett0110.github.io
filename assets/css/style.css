@@ -1614,6 +1614,9 @@ textarea.form-item {
     margin-bottom: 50px;
 }
 
+.title-hello {
+    padding-top: 30px;
+}
 .title {
     font-size: 24px;
     font-weight: 700;
@@ -6654,7 +6657,10 @@ h1, h2, h3, h4, h5, h6 {
 .crt-logo {
     font-family: "Bad Script", cursive;
 }
-
+.crt-footer{
+    font-family: "Bad Script", cursive;
+    font-size: 15px;
+}
 /**
  * Color Scheme
  */
