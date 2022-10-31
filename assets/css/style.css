@@ -6222,7 +6222,7 @@ yx-axis
 .clients li {
     width: 33.33%;
     display: inline-block;
-    vertical-align: bottom;
+    vertical-align: middle;
     margin-bottom: 70px;
     padding: 0 5px;
 }
