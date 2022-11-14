@@ -2135,3 +2135,6 @@
 .crt-icon-volunteer:before {
   content: "\e800";
 }
+.crt-icon-information:before {
+  content: "\e701";
+}
