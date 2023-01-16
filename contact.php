@@ -222,19 +222,57 @@
                     						// Add the g-recaptcha tag to the form you want to include the reCAPTCHA element
                     						?>
                     						<p>Complete the reCAPTCHA then submit the form.</p>
-                    						<form action="" method="post">
-                    							<input type="hidden" value="<?php echo $_POST['rsName'];?>" name="rsName">
-                    							<input type="hidden" value="<?php echo $_POST['rsEmail'];?>" name="rsEmail">
-                    							<input type="hidden" value="<?php echo $_POST['rsSubject'];?>" name="rsSubject">
-                    							<input type="hidden" value="<?php echo $_POST['rsMessage'];?>" name="rsMessage">
+                    						                            						<form action="php/mailsender.php" method="post" class="contact-form">
 
-                    							<div class="input-field">
-                    								<div class="g-recaptcha " data-sitekey="<?php echo $siteKey; ?>"></div>
-                    								<script type="text/javascript" src="https://www.google.com/recaptcha/api.js?hl=<?php echo $lang; ?>"></script>
-                    							</div>
-                    							<input type="submit" class="btn btn-lg btn-primary" value="Submit" />
-                    						</span>
-                    						</form>
+                                                                                                                                    <div class="form-group">
+                                                                                                                                        <label class="form-label" for="author">Név</label>
+
+                                                                                                                                        <div class="form-item-wrap">
+                                                                                                                                            <input id="author" class="form-item" name="crtName" type="text">
+                                                                                                                                        </div>
+                                                                                                                                    </div>
+
+                                                                                                                                    <div class="form-group">
+                                                                                                                                        <label class="form-label" for="email">E-mail cím</label>
+
+                                                                                                                                        <div class="form-item-wrap">
+                                                                                                                                            <input id="email" class="form-item" type="email" name="crtEmail"
+                                                                                                                                                   required="required">
+                                                                                                                                        </div>
+                                                                                                                                    </div>
+
+                                                                                                                                    <div class="form-group">
+                                                                                                                                        <label class="form-label" for="url">Tárgy</label>
+
+                                                                                                                                        <div class="form-item-wrap">
+                                                                                                                                            <input id="url" class="form-item" type="url" name="crtSubject">
+                                                                                                                                        </div>
+                                                                                                                                    </div>
+
+                                                                                                                                    <div class="form-group">
+                                                                                                                                        <label class="form-label" for="comment">Üzenet</label>
+
+                                                                                                                                        <div class="form-item-wrap">
+                                                                                                                                            <textarea id="comment" class="form-item" name="crtMessage"></textarea>
+                                                                                                                                        </div>
+                                                                                                                                    </div>
+
+                                                                                                                                    <div class="form-group">
+                                                                                                                                        <div class="form-item-wrap check-field">
+                                                                                                                                            <input type="checkbox" name="crtPivacyPolicy" id="crtPivacyPolicyWidget">
+                                                                                                                                            <label for="crtPivacyPolicy">Elolvastam és megértettem az <span
+                                                                                                                                                    class="tooltip" data-tooltip="Egyelőre nincs ilyen. :)">Adatvédelmi Szabályzatot</span>.</label>
+                                                                                                                                        </div>
+                                                                                                                                    </div>
+                                                                                                                                    <div class="input-field">
+                                                                                                                                    <div class="g-recaptcha " data-sitekey="<?php echo $siteKey; ?>"></div>
+                                                                                                                                    <script type="text/javascript" src="https://www.google.com/recaptcha/api.js?hl=<?php echo $lang; ?>"></script>
+                                                                                                                                     </div>
+                                                                                                                                    <div class="form-submit form-item-wrap">
+                                                                                                                                        <input class="btn btn-primary btn-lg crtFormSubmit" type="submit"
+                                                                                                                                               value="Küldés">
+                                                                                                                                    </div>
+                                                                                                                                </form>
                     					<?php endif; ?>
                     					</div>
                     				</div>
