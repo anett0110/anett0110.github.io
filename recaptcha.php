@@ -269,8 +269,8 @@
 						
 			<!-- START: PAGE CONTENT -->
 			<?php require_once __DIR__ . '/php/recaptcha/autoload.php';				
-				$siteKey = ''; // visit https://www.google.com/recaptcha/admin to generate keys
-				$secret = '';
+				$siteKey = '6Ld9JAIkAAAAAL9DwvvtG12v-ByrMiIus6RVaAoD'; // visit https://www.google.com/recaptcha/admin to generate keys
+				$secret = '6Ld9JAIkAAAAALHf4h2siv4E4Du75tA_KXni1MbO';
 				$lang = 'en'; // reCAPTCHA supported 40+ languages listed here: https://developers.google.com/recaptcha/docs/language
 			?>
 			
