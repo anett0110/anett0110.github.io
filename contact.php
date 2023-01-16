@@ -178,92 +178,156 @@
                             				$secret = '6Ld9JAIkAAAAALHf4h2siv4E4Du75tA_KXni1MbO';
                             				$lang = 'en'; // reCAPTCHA supported 40+ languages listed here: https://developers.google.com/recaptcha/docs/language
                             			?>
-                            <div class="padd-box-sm">
-                            <?php
-                            					if ($siteKey === '' || $secret === ''): ?>
-                            						<h4>Add your keys</h4>
-                            						<p>If you do not have keys already then visit
-                            						<a href = "https://www.google.com/recaptcha/admin">
-                            						https://www.google.com/recaptcha/admin</a> to generate them.<br/>
-                            						Edit <strong>recaptcha.php</strong> file and set the respective keys in <strong>$siteKey</strong> and
-                            						<strong>$secret</strong>. Reload the page after this.</p>
-                            					<?php
-                            					elseif (isset($_POST['g-recaptcha-response'])):
-                            						$recaptcha = new \ReCaptcha\ReCaptcha($secret);
-                            						$resp = $recaptcha->verify($_POST['g-recaptcha-response'], $_SERVER['REMOTE_ADDR']);
-                            						if ($resp->isSuccess()):
-                            						// If the response is a success, that's it!
-                            							?>
-                            							<h3>Congratulation!</h3>
-                            							<p>Your email was sent successfully! <a href="index.html">Go Back</a></p>
-                            							<?php
-
-                            							require_once __DIR__ . '/php/mailsender.php';
-                            						else:
-                            						// If it's not successful, then one or more error codes will be returned.
-                            							?>
-                            							<p>Something went wrong <a href="index.html">please try again</a>.</p>
-                            						<?php
-                            						endif;
-                            					else:
-                            						// Add the g-recaptcha tag to the form you want to include the reCAPTCHA element
-                            						?>
-                            						<form action="php/mailsender.php" method="post" class="contact-form">
-
-                                                                                        <div class="form-group">
-                                                                                            <label class="form-label" for="author">Név</label>
-
-                                                                                            <div class="form-item-wrap">
-                                                                                                <input id="author" class="form-item" name="crtName" type="text">
-                                                                                            </div>
-                                                                                        </div>
-
-                                                                                        <div class="form-group">
-                                                                                            <label class="form-label" for="email">E-mail cím</label>
-
-                                                                                            <div class="form-item-wrap">
-                                                                                                <input id="email" class="form-item" type="email" name="crtEmail"
-                                                                                                       required="required">
-                                                                                            </div>
-                                                                                        </div>
-
-                                                                                        <div class="form-group">
-                                                                                            <label class="form-label" for="url">Tárgy</label>
-
-                                                                                            <div class="form-item-wrap">
-                                                                                                <input id="url" class="form-item" type="url" name="crtSubject">
-                                                                                            </div>
-                                                                                        </div>
-
-                                                                                        <div class="form-group">
-                                                                                            <label class="form-label" for="comment">Üzenet</label>
-
-                                                                                            <div class="form-item-wrap">
-                                                                                                <textarea id="comment" class="form-item" name="crtMessage"></textarea>
-                                                                                            </div>
-                                                                                        </div>
-
-                                                                                        <div class="form-group">
-                                                                                            <div class="form-item-wrap check-field">
-                                                                                                <input type="checkbox" name="crtPivacyPolicy" id="crtPivacyPolicyWidget">
-                                                                                                <label for="crtPivacyPolicy">Elolvastam és megértettem az <span
-                                                                                                        class="tooltip" data-tooltip="Egyelőre nincs ilyen. :)">Adatvédelmi Szabályzatot</span>.</label>
-                                                                                            </div>
-                                                                                        </div>
-                                                                                        <div class="input-field">
-                                                                                        <div class="g-recaptcha " data-sitekey="<?php echo $siteKey; ?>"></div>
-                                                                                        <script type="text/javascript" src="https://www.google.com/recaptcha/api.js?hl=<?php echo $lang; ?>"></script>
+//                             <div class="padd-box-sm">
+//                             <?php
+//                             					if ($siteKey === '' || $secret === ''): ?>
+//                             						<h4>Add your keys</h4>
+//                             						<p>If you do not have keys already then visit
+//                             						<a href = "https://www.google.com/recaptcha/admin">
+//                             						https://www.google.com/recaptcha/admin</a> to generate them.<br/>
+//                             						Edit <strong>recaptcha.php</strong> file and set the respective keys in <strong>$siteKey</strong> and
+//                             						<strong>$secret</strong>. Reload the page after this.</p>
+//                             					<?php
+//                             					elseif (isset($_POST['g-recaptcha-response'])):
+//                             						$recaptcha = new \ReCaptcha\ReCaptcha($secret);
+//                             						$resp = $recaptcha->verify($_POST['g-recaptcha-response'], $_SERVER['REMOTE_ADDR']);
+//                             						if ($resp->isSuccess()):
+//                             						// If the response is a success, that's it!
+//                             							?>
+//                             							<h3>Congratulation!</h3>
+//                             							<p>Your email was sent successfully! <a href="index.html">Go Back</a></p>
+//                             							<?php
+//
+//                             							require_once __DIR__ . '/php/mailsender.php';
+//                             						else:
+//                             						// If it's not successful, then one or more error codes will be returned.
+//                             							?>
+//                             							<p>Something went wrong <a href="index.html">please try again</a>.</p>
+//                             						<?php
+//                             						endif;
+//                             					else:
+//                             						// Add the g-recaptcha tag to the form you want to include the reCAPTCHA element
+//                             						?>
+//                             						<form action="php/mailsender.php" method="post" class="contact-form">
+//
+//                                                                                         <div class="form-group">
+//                                                                                             <label class="form-label" for="author">Név</label>
+//
+//                                                                                             <div class="form-item-wrap">
+//                                                                                                 <input id="author" class="form-item" name="crtName" type="text">
+//                                                                                             </div>
 //                                                                                         </div>
-                                                                                        <div class="form-submit form-item-wrap">
-                                                                                            <input class="btn btn-primary btn-lg crtFormSubmit" type="submit"
-                                                                                                   value="Küldés">
-                                                                                        </div>
-                                                                                    </form>
-                            					<?php endif; ?>
-                            </div>
-                        </div>
-                        <!-- .padd-box -->
+//
+//                                                                                         <div class="form-group">
+//                                                                                             <label class="form-label" for="email">E-mail cím</label>
+//
+//                                                                                             <div class="form-item-wrap">
+//                                                                                                 <input id="email" class="form-item" type="email" name="crtEmail"
+//                                                                                                        required="required">
+//                                                                                             </div>
+//                                                                                         </div>
+//
+//                                                                                         <div class="form-group">
+//                                                                                             <label class="form-label" for="url">Tárgy</label>
+//
+//                                                                                             <div class="form-item-wrap">
+//                                                                                                 <input id="url" class="form-item" type="url" name="crtSubject">
+//                                                                                             </div>
+//                                                                                         </div>
+//
+//                                                                                         <div class="form-group">
+//                                                                                             <label class="form-label" for="comment">Üzenet</label>
+//
+//                                                                                             <div class="form-item-wrap">
+//                                                                                                 <textarea id="comment" class="form-item" name="crtMessage"></textarea>
+//                                                                                             </div>
+//                                                                                         </div>
+//
+//                                                                                         <div class="form-group">
+//                                                                                             <div class="form-item-wrap check-field">
+//                                                                                                 <input type="checkbox" name="crtPivacyPolicy" id="crtPivacyPolicyWidget">
+//                                                                                                 <label for="crtPivacyPolicy">Elolvastam és megértettem az <span
+//                                                                                                         class="tooltip" data-tooltip="Egyelőre nincs ilyen. :)">Adatvédelmi Szabályzatot</span>.</label>
+//                                                                                             </div>
+//                                                                                         </div>
+//                                                                                         <div class="input-field">
+//                                                                                         <div class="g-recaptcha " data-sitekey="<?php echo $siteKey; ?>"></div>
+//                                                                                         <script type="text/javascript" src="https://www.google.com/recaptcha/api.js?hl=<?php echo $lang; ?>"></script>
+// //                                                                                         </div>
+//                                                                                         <div class="form-submit form-item-wrap">
+//                                                                                             <input class="btn btn-primary btn-lg crtFormSubmit" type="submit"
+//                                                                                                    value="Küldés">
+//                                                                                         </div>
+//                                                                                     </form>
+//                             					<?php endif; ?>
+//                             </div>
+//                         </div>
+//                         <!-- .padd-box -->
+                     <div class="content">
+                                <div class="container">
 
+                    			<!-- START: PAGE CONTENT -->
+                    			<?php require_once __DIR__ . '/php/recaptcha/autoload.php';
+                    				$siteKey = '6Ld9JAIkAAAAAL9DwvvtG12v-ByrMiIus6RVaAoD'; // visit https://www.google.com/recaptcha/admin to generate keys
+                    				$secret = '6Ld9JAIkAAAAALHf4h2siv4E4Du75tA_KXni1MbO';
+                    				$lang = 'en'; // reCAPTCHA supported 40+ languages listed here: https://developers.google.com/recaptcha/docs/language
+                    			?>
+
+                    			<section class="section section-text text-center">
+                    				<div class="animate-up animated">
+                    					<h2 class="section-title">You're not a bot? Aren't you?</h2>
+                    					<div class="section-box">
+                    					<?php
+                    					if ($siteKey === '' || $secret === ''): ?>
+                    						<h4>Add your keys</h4>
+                    						<p>If you do not have keys already then visit
+                    						<a href = "https://www.google.com/recaptcha/admin">
+                    						https://www.google.com/recaptcha/admin</a> to generate them.<br/>
+                    						Edit <strong>recaptcha.php</strong> file and set the respective keys in <strong>$siteKey</strong> and
+                    						<strong>$secret</strong>. Reload the page after this.</p>
+                    					<?php
+                    					elseif (isset($_POST['g-recaptcha-response'])):
+                    						$recaptcha = new \ReCaptcha\ReCaptcha($secret);
+                    						$resp = $recaptcha->verify($_POST['g-recaptcha-response'], $_SERVER['REMOTE_ADDR']);
+                    						if ($resp->isSuccess()):
+                    						// If the response is a success, that's it!
+                    							?>
+                    							<h3>Congratulation!</h3>
+                    							<p>Your email was sent successfully! <a href="index.html">Go Back</a></p>
+                    							<?php
+
+                    							require_once __DIR__ . '/php/mailsender.php';
+                    						else:
+                    						// If it's not successful, then one or more error codes will be returned.
+                    							?>
+                    							<p>Something went wrong <a href="index.html">please try again</a>.</p>
+                    						<?php
+                    						endif;
+                    					else:
+                    						// Add the g-recaptcha tag to the form you want to include the reCAPTCHA element
+                    						?>
+                    						<p>Complete the reCAPTCHA then submit the form.</p>
+                    						<form action="" method="post">
+                    							<input type="hidden" value="<?php echo $_POST['rsName'];?>" name="rsName">
+                    							<input type="hidden" value="<?php echo $_POST['rsEmail'];?>" name="rsEmail">
+                    							<input type="hidden" value="<?php echo $_POST['rsSubject'];?>" name="rsSubject">
+                    							<input type="hidden" value="<?php echo $_POST['rsMessage'];?>" name="rsMessage">
+
+                    							<div class="input-field">
+                    								<div class="g-recaptcha " data-sitekey="<?php echo $siteKey; ?>"></div>
+                    								<script type="text/javascript" src="https://www.google.com/recaptcha/api.js?hl=<?php echo $lang; ?>"></script>
+                    							</div>
+                    							<input type="submit" class="btn btn-lg btn-primary" value="Submit" />
+                    						</span>
+                    						</form>
+                    					<?php endif; ?>
+                    					</div>
+                    				</div>
+                    			</section>
+                    			<!-- END: PAGE CONTENT -->
+
+                                </div><!-- .container -->
+                            </div><!-- .content -->
                         <div id="map" data-latitude="50.84592" data-longitude="4.366859999999974"></div>
 
                     </div>
