@@ -173,55 +173,14 @@
                                         is felveheted velem a kapcsolatot</h3>
                                 </header>
                             </div>
-                            <?php require_once __DIR__ . '/php/recaptcha/autoload.php';
-                            				$siteKey = '6Ld9JAIkAAAAAL9DwvvtG12v-ByrMiIus6RVaAoD'; // visit https://www.google.com/recaptcha/admin to generate keys
-                            				$secret = '6Ld9JAIkAAAAALHf4h2siv4E4Du75tA_KXni1MbO';
-                            				$lang = 'en'; // reCAPTCHA supported 40+ languages listed here: https://developers.google.com/recaptcha/docs/language
-                            			?>
                      <div class="content">
                                 <div class="container">
-
-                    			<!-- START: PAGE CONTENT -->
-                    			<?php require_once __DIR__ . '/php/recaptcha/autoload.php';
-                    				$siteKey = '6Ld9JAIkAAAAAL9DwvvtG12v-ByrMiIus6RVaAoD'; // visit https://www.google.com/recaptcha/admin to generate keys
-                    				$secret = '6Ld9JAIkAAAAALHf4h2siv4E4Du75tA_KXni1MbO';
-                    				$lang = 'en'; // reCAPTCHA supported 40+ languages listed here: https://developers.google.com/recaptcha/docs/language
-                    			?>
-
                     			<section class="section section-text text-center">
                     				<div class="animate-up animated">
                     					<h2 class="section-title">You're not a bot? Aren't you?</h2>
                     					<div class="section-box">
-                    					<?php
-                    					if ($siteKey === '' || $secret === ''): ?>
-                    						<h4>Add your keys</h4>
-                    						<p>If you do not have keys already then visit
-                    						<a href = "https://www.google.com/recaptcha/admin">
-                    						https://www.google.com/recaptcha/admin</a> to generate them.<br/>
-                    						Edit <strong>recaptcha.php</strong> file and set the respective keys in <strong>$siteKey</strong> and
-                    						<strong>$secret</strong>. Reload the page after this.</p>
-                    					<?php
-                    					elseif (isset($_POST['g-recaptcha-response'])):
-                    						$recaptcha = new \ReCaptcha\ReCaptcha($secret);
-                    						$resp = $recaptcha->verify($_POST['g-recaptcha-response'], $_SERVER['REMOTE_ADDR']);
-                    						if ($resp->isSuccess()):
-                    						// If the response is a success, that's it!
-                    							?>
                     							<h3>Congratulation!</h3>
                     							<p>Your email was sent successfully! <a href="index.html">Go Back</a></p>
-                    							<?php
-
-                    							require_once __DIR__ . '/php/mailsender.php';
-                    						else:
-                    						// If it's not successful, then one or more error codes will be returned.
-                    							?>
-                    							<p>Something went wrong <a href="index.html">please try again</a>.</p>
-                    						<?php
-                    						endif;
-                    					else:
-                    						// Add the g-recaptcha tag to the form you want to include the reCAPTCHA element
-                    						?>
-                    						<p>Complete the reCAPTCHA then submit the form.</p>
                     						                            						<form action="php/mailsender.php" method="post" class="contact-form">
 
                                                                                                                                     <div class="form-group">
@@ -273,7 +232,6 @@
                                                                                                                                                value="Küldés">
                                                                                                                                     </div>
                                                                                                                                 </form>
-                    					<?php endif; ?>
                     					</div>
                     				</div>
                     			</section>
