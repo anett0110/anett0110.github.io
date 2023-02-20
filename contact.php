@@ -88,15 +88,17 @@
                             <p class="text-muted">Közgazdász | Kreatív fiatal</p>
                             <ul class="crt-social clear-list">
                                 <li><a href="tel:+36309277545"><span class="crt-icon crt-icon-phone"></span></a></li>
-                                <li><a href="https://linkedin.com/in/anettbillig/" target="_blank"><span class="crt-icon crt-icon-linkedin"></span></a></li>
-                                <li><a href="mailto:anett.billig@kszk.bme.hu"><span class="crt-icon crt-icon-envelope"></span></a></li>
+                                <li><a href="https://linkedin.com/in/anettbillig/" target="_blank"><span
+                                                class="crt-icon crt-icon-linkedin"></span></a></li>
+                                <li><a href="mailto:anett.billig@kszk.bme.hu"><span
+                                                class="crt-icon crt-icon-envelope"></span></a></li>
                             </ul>
                         </div>
                     </div>
                     <div class="crt-side-box-btn">
                         <a class="btn btn-default btn-lg btn-block btn-thin btn-upper"
                            href="assets/images/uploads/anettbillig_cv_hu.pdf" target="_blank"><span
-                                class="crt-icon crt-icon-download"></span>Önéletrajz</a>
+                                    class="crt-icon crt-icon-download"></span>Önéletrajz</a>
                     </div>
                 </div>
                 <!-- .crt-side-box-item -->
@@ -113,27 +115,27 @@
                             <ul class="clear-list">
                                 <li>
                                     <a href="index.html" data-tooltip="Beköszönő"><span
-                                            class="crt-icon crt-icon-information"></span></a>
+                                                class="crt-icon crt-icon-information"></span></a>
                                 </li>
                                 <li>
                                     <a href="experience.html" data-tooltip="Munkatapasztalatok"><span
-                                            class="crt-icon crt-icon-experience"></span></a>
+                                                class="crt-icon crt-icon-experience"></span></a>
                                 </li>
                                 <li>
                                     <a href="volunteerworks.html" data-tooltip="Önkéntes tevékenységek"><span
-                                            class="crt-icon crt-icon-volunteer"></span></a>
+                                                class="crt-icon crt-icon-volunteer"></span></a>
                                 </li>
                                 <li>
                                     <a href="portfolio.html" data-tooltip="Portfólió"><span
-                                            class="crt-icon crt-icon-portfolio"></span></a>
+                                                class="crt-icon crt-icon-portfolio"></span></a>
                                 </li>
                                 <li>
                                     <a href="references.html" data-tooltip="Referenciák"><span
-                                            class="crt-icon crt-icon-references"></span></a>
+                                                class="crt-icon crt-icon-references"></span></a>
                                 </li>
                                 <li>
                                     <a href="contact.html" data-tooltip="Kapcsolat"><span
-                                            class="crt-icon crt-icon-contact"></span></a>
+                                                class="crt-icon crt-icon-contact"></span></a>
                                 </li>
                             </ul>
                         </nav>
@@ -173,254 +175,269 @@
                                         is felveheted velem a kapcsolatot</h3>
                                 </header>
                             </div>
-                     <div class="content">
+                            <div class="content">
                                 <div class="container">
-                    			<section class="section section-text text-center">
-                    				<div class="animate-up animated">
-                    					<h2 class="section-title">You're not a bot? Aren't you?</h2>
-                    					<div class="section-box">
-                    							<h3>Congratulation!</h3>
-                    							<p>Your email was sent successfully! <a href="index.html">Go Back</a></p>
-                    						                            						<form action="php/mailsender.php" method="post" class="contact-form">
+                                    <section class="section section-text text-center">
+                                        <div class="animate-up animated">
+                                            <h2 class="section-title">You're not a bot? Aren't you?</h2>
+                                            <div class="section-box">
+                                                <h3>Congratulation!</h3>
+                                                <p>Your email was sent successfully! <a href="index.html">Go Back</a>
+                                                </p>
+                                                <form action="php/mailsender.php" method="post" class="contact-form">
 
-                                                                                                                                    <div class="form-group">
-                                                                                                                                        <label class="form-label" for="author">Név</label>
+                                                    <div class="form-group">
+                                                        <label class="form-label" for="author">Név</label>
 
-                                                                                                                                        <div class="form-item-wrap">
-                                                                                                                                            <input id="author" class="form-item" name="crtName" type="text">
-                                                                                                                                        </div>
-                                                                                                                                    </div>
+                                                        <div class="form-item-wrap">
+                                                            <input id="author" class="form-item" name="crtName"
+                                                                   type="text">
+                                                        </div>
+                                                    </div>
 
-                                                                                                                                    <div class="form-group">
-                                                                                                                                        <label class="form-label" for="email">E-mail cím</label>
+                                                    <div class="form-group">
+                                                        <label class="form-label" for="email">E-mail cím</label>
 
-                                                                                                                                        <div class="form-item-wrap">
-                                                                                                                                            <input id="email" class="form-item" type="email" name="crtEmail"
-                                                                                                                                                   required="required">
-                                                                                                                                        </div>
-                                                                                                                                    </div>
+                                                        <div class="form-item-wrap">
+                                                            <input id="email" class="form-item" type="email"
+                                                                   name="crtEmail"
+                                                                   required="required">
+                                                        </div>
+                                                    </div>
 
-                                                                                                                                    <div class="form-group">
-                                                                                                                                        <label class="form-label" for="url">Tárgy</label>
+                                                    <div class="form-group">
+                                                        <label class="form-label" for="url">Tárgy</label>
 
-                                                                                                                                        <div class="form-item-wrap">
-                                                                                                                                            <input id="url" class="form-item" type="url" name="crtSubject">
-                                                                                                                                        </div>
-                                                                                                                                    </div>
+                                                        <div class="form-item-wrap">
+                                                            <input id="url" class="form-item" type="url"
+                                                                   name="crtSubject">
+                                                        </div>
+                                                    </div>
 
-                                                                                                                                    <div class="form-group">
-                                                                                                                                        <label class="form-label" for="comment">Üzenet</label>
+                                                    <div class="form-group">
+                                                        <label class="form-label" for="comment">Üzenet</label>
 
-                                                                                                                                        <div class="form-item-wrap">
-                                                                                                                                            <textarea id="comment" class="form-item" name="crtMessage"></textarea>
-                                                                                                                                        </div>
-                                                                                                                                    </div>
+                                                        <div class="form-item-wrap">
+                                                            <textarea id="comment" class="form-item"
+                                                                      name="crtMessage"></textarea>
+                                                        </div>
+                                                    </div>
 
-                                                                                                                                    <div class="form-group">
-                                                                                                                                        <div class="form-item-wrap check-field">
-                                                                                                                                            <input type="checkbox" name="crtPivacyPolicy" id="crtPivacyPolicyWidget">
-                                                                                                                                            <label for="crtPivacyPolicy">Elolvastam és megértettem az <span
-                                                                                                                                                    class="tooltip" data-tooltip="Egyelőre nincs ilyen. :)">Adatvédelmi Szabályzatot</span>.</label>
-                                                                                                                                        </div>
-                                                                                                                                    </div>
-                                                                                                                                    <div class="input-field">
-                                                                                                                                    <div class="g-recaptcha " data-sitekey="<?php echo $siteKey; ?>"></div>
-                                                                                                                                    <script type="text/javascript" src="https://www.google.com/recaptcha/api.js?hl=<?php echo $lang; ?>"></script>
-                                                                                                                                     </div>
-                                                                                                                                    <div class="form-submit form-item-wrap">
-                                                                                                                                        <input class="btn btn-primary btn-lg crtFormSubmit" type="submit"
-                                                                                                                                               value="Küldés">
-                                                                                                                                    </div>
-                                                                                                                                </form>
-                    					</div>
-                    				</div>
-                    			</section>
-                    			<!-- END: PAGE CONTENT -->
+                                                    <div class="form-group">
+                                                        <div class="form-item-wrap check-field">
+                                                            <input type="checkbox" name="crtPivacyPolicy"
+                                                                   id="crtPivacyPolicyWidget">
+                                                            <label for="crtPivacyPolicy">Elolvastam és megértettem az
+                                                                <span
+                                                                        class="tooltip"
+                                                                        data-tooltip="Egyelőre nincs ilyen. :)">Adatvédelmi Szabályzatot</span>.</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="input-field">
+                                                        <div class="g-recaptcha "
+                                                             data-sitekey="<?php echo $siteKey; ?>"></div>
+                                                        <script type="text/javascript"
+                                                                src="https://www.google.com/recaptcha/api.js?hl=<?php echo $lang; ?>"></script>
+                                                    </div>
+                                                    <div class="form-submit form-item-wrap">
+                                                        <input class="btn btn-primary btn-lg crtFormSubmit"
+                                                               type="submit"
+                                                               value="Küldés">
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <!-- END: PAGE CONTENT -->
 
                                 </div><!-- .container -->
                             </div><!-- .content -->
-                        <div id="map" data-latitude="50.84592" data-longitude="4.366859999999974"></div>
+                            <div id="map" data-latitude="50.84592" data-longitude="4.366859999999974"></div>
 
+                        </div>
+                        <!-- .crt-paper-cont -->
                     </div>
-                    <!-- .crt-paper-cont -->
+                    <!-- .crt-paper -->
                 </div>
-                <!-- .crt-paper -->
+                <!-- .crt-paper-layers -->
             </div>
-            <!-- .crt-paper-layers -->
-        </div>
-        <!-- .crt-container-sm -->
-    </div>
-    <!-- .crt-container -->
-
-    <div id="crt-sidebar">
-        <button id="crt-sidebar-close" class="btn btn-icon btn-light btn-shade">
-            <span class="crt-icon crt-icon-close"></span>
-        </button>
-
-        <div id="crt-sidebar-inner">
-            <div class="crt-card bg-primary text-center">
-                <div class="crt-card-avatar">
-                    <img class="avatar avatar-195" src="assets/images/uploads/avatar/ba_a2.jpg" alt="">
-                </div>
-                <div class="crt-card-info">
-                    <h2 class="text-upper">Billig Anett</h2>
-
-                    <p class="text-muted">Közgazdász | Kreatív fiatal</p>
-                    <ul class="crt-social clear-list">
-                        <li><a href="tel:+36309277545"><span class="crt-icon crt-icon-phone"></span></a></li>
-                        <li><a href="https://linkedin.com/in/anettbillig/" target="_blank"><span class="crt-icon crt-icon-linkedin"></span></a></li>
-                        <li><a href="mailto:anett.billig@kszk.bme.hu"><span class="crt-icon crt-icon-envelope"></span></a></li>
-                    </ul>
-                </div>
-            </div>
-            <aside class="widget-area">
-                <section class="widget widget_search">
-                    <form role="search" method="get" class="search-form" action="#">
-                        <label>
-                            <span class="screen-reader-text">Search for:</span>
-                            <input type="search" class="search-field" placeholder="Search" value="" name="s">
-                        </label>
-                        <button type="submit" class="search-submit">
-                            <span class="screen-reader-text">Search</span>
-                            <span class="crt-icon crt-icon-search"></span>
-                        </button>
-                    </form>
-                </section>
-
-                <section class="widget widget_posts_entries">
-                    <h2 class="widget-title">popular posts</h2>
-                    <ul>
-                        <li>
-                            <a class="post-image" href="#">
-                                <img src="assets/images/uploads/Blog/img-70x70-01.png" alt="">
-                            </a>
-
-                            <div class="post-content">
-                                <h3>
-                                    <a href="#">contextual advertising</a>
-                                </h3>
-                            </div>
-                            <div class="post-category-comment">
-                                <a href="#" class="post-category">Work</a>
-                                <a href="#" class="post-comments">256 comments</a>
-                            </div>
-                        </li>
-
-                        <li>
-                            <a class="post-image" href="#">
-                                <img src="assets/images/uploads/Blog/img-70x70-02.jpg" alt="">
-                            </a>
-
-                            <div class="post-content">
-                                <h3>
-                                    <a href="#">grilling tips for the dog days of summer</a>
-                                </h3>
-                            </div>
-                            <div class="post-category-comment">
-                                <a href="#" class="post-category">Work</a>
-                                <a href="#" class="post-comments">256 comments</a>
-                            </div>
-                        </li>
-
-                        <li>
-                            <a class="post-image" href="#">
-                                <img src="assets/images/uploads/Blog/img-70x70-03.png" alt="">
-                            </a>
-
-                            <div class="post-content">
-                                <h3><a href="#"></a>branding do you know who are</h3>
-                            </div>
-                            <div class="post-category-comment">
-                                <a href="#" class="post-category">Work</a>
-                                <a href="#" class="post-comments">256 comments</a>
-                            </div>
-                        </li>
-                    </ul>
-                </section>
-
-                <section id="tag_cloud-2" class="widget widget_tag_cloud">
-                    <h2 class="widget-title">Tags</h2>
-
-                    <div class="tagcloud">
-                        <a href="#" class="tag-link-5 tag-link-position-1" title="1 topic"
-                           style="font-size: 1em;">Audios</a>
-                        <a href="#" class="tag-link-7 tag-link-position-2" title="1 topic"
-                           style="font-size: 1em;">Freelance</a></div>
-                </section>
-
-                <section id="recent-posts-3" class="widget widget_recent_entries">
-                    <h4 class="widget-title">Recent Posts</h4>
-                    <ul>
-                        <li>
-                            <a href="#">Global Travel And Vacations Luxury Travel On A Tight Budget</a>
-
-                            <div class="post-category-comment">
-                                <a href="#" class="post-category">Photography</a>
-                                <a href="#" class="post-comments">256 comments</a>
-                            </div>
-                        </li>
-                        <li>
-                            <a href="#">cooking for one</a>
-
-                            <div class="post-category-comment">
-                                <a href="#" class="post-category">Work</a>
-                                <a href="#" class="post-comments">256 comments</a>
-                            </div>
-                        </li>
-                        <li>
-                            <a href="#">An Ugly Myspace Profile Will Sure Ruin Your Reputation</a>
-
-                            <div class="post-category-comment">
-                                <a href="#" class="post-category">Photography</a>
-                                <a href="#" class="post-comments">256 comments</a>
-                            </div>
-                        </li>
-                    </ul>
-                </section>
-
-                <section class="widget widget_categories">
-                    <h4 class="widget-title">post categories</h4>
-                    <ul>
-                        <li class="cat-item"><a href="#">Audios</a>5</li>
-                        <li class="cat-item"><a href="#">Daili Inspiration</a>2</li>
-                        <li class="cat-item"><a href="#">Freelance</a>27</li>
-                        <li class="cat-item"><a href="#">Links</a>5</li>
-                        <li class="cat-item"><a href="#">Mobile</a>2</li>
-                        <li class="cat-item"><a href="#">Phography</a>27</li>
-                    </ul>
-                </section>
-            </aside>
-
-        </div>
-        <!-- #crt-sidebar-inner -->
-    </div>
-    <!-- #crt-sidebar -->
-    <footer id="crt-footer" class="crt-container-lg">
-        <div class="crt-container">
-            <div class="crt-container-sm clear-mrg text-center">
-                <p><span class="crt-footer">Anett</span> | <script>document.write(new Date().getFullYear())</script></p>
-            </div>
+            <!-- .crt-container-sm -->
         </div>
         <!-- .crt-container -->
-    </footer>
-    <!-- #crt-footer -->
 
-    <svg id="crt-bg-shape-1" class="hidden-sm hidden-xs" height="519" width="758">
-        <polygon class="pol" points="0,455,693,352,173,0,92,0,0,71"/>
-    </svg>
+        <div id="crt-sidebar">
+            <button id="crt-sidebar-close" class="btn btn-icon btn-light btn-shade">
+                <span class="crt-icon crt-icon-close"></span>
+            </button>
 
-    <svg id="crt-bg-shape-2" class="hidden-sm hidden-xs" height="536" width="633">
-        <polygon points="0,0,633,0,633,536"/>
-    </svg>
-</div>
-<!-- .crt-wrapper -->
+            <div id="crt-sidebar-inner">
+                <div class="crt-card bg-primary text-center">
+                    <div class="crt-card-avatar">
+                        <img class="avatar avatar-195" src="assets/images/uploads/avatar/ba_a2.jpg" alt="">
+                    </div>
+                    <div class="crt-card-info">
+                        <h2 class="text-upper">Billig Anett</h2>
 
-<!-- Scripts -->
-<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<script>window.jQuery || document.write('<script src="assets/js/vendor/jquery-1.12.4.min.js"><\/script>')</script>
-<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
+                        <p class="text-muted">Közgazdász | Kreatív fiatal</p>
+                        <ul class="crt-social clear-list">
+                            <li><a href="tel:+36309277545"><span class="crt-icon crt-icon-phone"></span></a></li>
+                            <li><a href="https://linkedin.com/in/anettbillig/" target="_blank"><span
+                                            class="crt-icon crt-icon-linkedin"></span></a></li>
+                            <li><a href="mailto:anett.billig@kszk.bme.hu"><span
+                                            class="crt-icon crt-icon-envelope"></span></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <aside class="widget-area">
+                    <section class="widget widget_search">
+                        <form role="search" method="get" class="search-form" action="#">
+                            <label>
+                                <span class="screen-reader-text">Search for:</span>
+                                <input type="search" class="search-field" placeholder="Search" value="" name="s">
+                            </label>
+                            <button type="submit" class="search-submit">
+                                <span class="screen-reader-text">Search</span>
+                                <span class="crt-icon crt-icon-search"></span>
+                            </button>
+                        </form>
+                    </section>
 
-<script type="text/javascript" src="assets/js/plugins.min.js"></script>
-<script type="text/javascript" src="assets/js/theme.min.js"></script>
+                    <section class="widget widget_posts_entries">
+                        <h2 class="widget-title">popular posts</h2>
+                        <ul>
+                            <li>
+                                <a class="post-image" href="#">
+                                    <img src="assets/images/uploads/Blog/img-70x70-01.png" alt="">
+                                </a>
+
+                                <div class="post-content">
+                                    <h3>
+                                        <a href="#">contextual advertising</a>
+                                    </h3>
+                                </div>
+                                <div class="post-category-comment">
+                                    <a href="#" class="post-category">Work</a>
+                                    <a href="#" class="post-comments">256 comments</a>
+                                </div>
+                            </li>
+
+                            <li>
+                                <a class="post-image" href="#">
+                                    <img src="assets/images/uploads/Blog/img-70x70-02.jpg" alt="">
+                                </a>
+
+                                <div class="post-content">
+                                    <h3>
+                                        <a href="#">grilling tips for the dog days of summer</a>
+                                    </h3>
+                                </div>
+                                <div class="post-category-comment">
+                                    <a href="#" class="post-category">Work</a>
+                                    <a href="#" class="post-comments">256 comments</a>
+                                </div>
+                            </li>
+
+                            <li>
+                                <a class="post-image" href="#">
+                                    <img src="assets/images/uploads/Blog/img-70x70-03.png" alt="">
+                                </a>
+
+                                <div class="post-content">
+                                    <h3><a href="#"></a>branding do you know who are</h3>
+                                </div>
+                                <div class="post-category-comment">
+                                    <a href="#" class="post-category">Work</a>
+                                    <a href="#" class="post-comments">256 comments</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </section>
+
+                    <section id="tag_cloud-2" class="widget widget_tag_cloud">
+                        <h2 class="widget-title">Tags</h2>
+
+                        <div class="tagcloud">
+                            <a href="#" class="tag-link-5 tag-link-position-1" title="1 topic"
+                               style="font-size: 1em;">Audios</a>
+                            <a href="#" class="tag-link-7 tag-link-position-2" title="1 topic"
+                               style="font-size: 1em;">Freelance</a></div>
+                    </section>
+
+                    <section id="recent-posts-3" class="widget widget_recent_entries">
+                        <h4 class="widget-title">Recent Posts</h4>
+                        <ul>
+                            <li>
+                                <a href="#">Global Travel And Vacations Luxury Travel On A Tight Budget</a>
+
+                                <div class="post-category-comment">
+                                    <a href="#" class="post-category">Photography</a>
+                                    <a href="#" class="post-comments">256 comments</a>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#">cooking for one</a>
+
+                                <div class="post-category-comment">
+                                    <a href="#" class="post-category">Work</a>
+                                    <a href="#" class="post-comments">256 comments</a>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#">An Ugly Myspace Profile Will Sure Ruin Your Reputation</a>
+
+                                <div class="post-category-comment">
+                                    <a href="#" class="post-category">Photography</a>
+                                    <a href="#" class="post-comments">256 comments</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </section>
+
+                    <section class="widget widget_categories">
+                        <h4 class="widget-title">post categories</h4>
+                        <ul>
+                            <li class="cat-item"><a href="#">Audios</a>5</li>
+                            <li class="cat-item"><a href="#">Daili Inspiration</a>2</li>
+                            <li class="cat-item"><a href="#">Freelance</a>27</li>
+                            <li class="cat-item"><a href="#">Links</a>5</li>
+                            <li class="cat-item"><a href="#">Mobile</a>2</li>
+                            <li class="cat-item"><a href="#">Phography</a>27</li>
+                        </ul>
+                    </section>
+                </aside>
+
+            </div>
+            <!-- #crt-sidebar-inner -->
+        </div>
+        <!-- #crt-sidebar -->
+        <footer id="crt-footer" class="crt-container-lg">
+            <div class="crt-container">
+                <div class="crt-container-sm clear-mrg text-center">
+                    <p><span class="crt-footer">Anett</span> |
+                        <script>document.write(new Date().getFullYear())</script>
+                    </p>
+                </div>
+            </div>
+            <!-- .crt-container -->
+        </footer>
+        <!-- #crt-footer -->
+
+        <svg id="crt-bg-shape-1" class="hidden-sm hidden-xs" height="519" width="758">
+            <polygon class="pol" points="0,455,693,352,173,0,92,0,0,71"/>
+        </svg>
+
+        <svg id="crt-bg-shape-2" class="hidden-sm hidden-xs" height="536" width="633">
+            <polygon points="0,0,633,0,633,536"/>
+        </svg>
+    </div>
+    <!-- .crt-wrapper -->
+
+    <!-- Scripts -->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="assets/js/vendor/jquery-1.12.4.min.js"><\/script>')</script>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
+
+    <script type="text/javascript" src="assets/js/plugins.min.js"></script>
+    <script type="text/javascript" src="assets/js/theme.min.js"></script>
 </body>
 </html>
