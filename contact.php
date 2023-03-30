@@ -174,7 +174,7 @@
 <!--                                    <h3 class="title text-upper" style="text-align: center">Az alábbi űrlapon keresztül-->
 <!--                                        is felveheted velem a kapcsolatot</h3>-->
                                 </header>
-                                <div class="mapouter"><div class="gmap_canvas"><iframe width="770" height="510" id="gmap_canvas" src="https://maps.google.com/maps?q=Budapest&t=&z=10&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><style>.mapouter{position:relative;text-align:center;height:510px;width:770px;}</style><style>.gmap_canvas {overflow:hidden;background:none!important;height:510px;width:770px;}</style></div></div>
+                                <div class="mapouter"><div class="gmap_canvas"><iframe width="770" height="510" id="gmap_canvas" src="https://maps.google.com/maps?q=Budapest&t=&z=10&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><style>.mapouter{position:relative;text-align:center;height:510px;width:770px;right:220px;}</style><style>.gmap_canvas {overflow:hidden;background:none!important;height:510px;width:770px;}</style></div></div>
                             </div>
 <!--                            <div class="content">-->
 <!--                                <div class="container">-->
