@@ -171,89 +171,89 @@
                                         <dd>+36 30 927 7545</dd>
                                         </p>
                                     </blockquote>
-                                    <h3 class="title text-upper" style="text-align: center">Az alábbi űrlapon keresztül
-                                        is felveheted velem a kapcsolatot</h3>
+<!--                                    <h3 class="title text-upper" style="text-align: center">Az alábbi űrlapon keresztül-->
+<!--                                        is felveheted velem a kapcsolatot</h3>-->
                                 </header>
                             </div>
-                            <div class="content">
-                                <div class="container">
-                                    <section class="section section-text text-center">
-                                        <div class="animate-up animated">
-                                            <h2 class="section-title">You're not a bot? Aren't you?</h2>
-                                            <div class="section-box">
-                                                <h3>Congratulation!</h3>
-                                                <p>Your email was sent successfully! <a href="index.html">Go Back</a>
-                                                </p>
-                                                <form action="php/mailsender.php" method="post" class="contact-form">
-
-                                                    <div class="form-group">
-                                                        <label class="form-label" for="author">Név</label>
-
-                                                        <div class="form-item-wrap">
-                                                            <input id="author" class="form-item" name="crtName"
-                                                                   type="text">
-                                                        </div>
-                                                    </div>
-
-                                                    <div class="form-group">
-                                                        <label class="form-label" for="email">E-mail cím</label>
-
-                                                        <div class="form-item-wrap">
-                                                            <input id="email" class="form-item" type="email"
-                                                                   name="crtEmail"
-                                                                   required="required">
-                                                        </div>
-                                                    </div>
-
-                                                    <div class="form-group">
-                                                        <label class="form-label" for="url">Tárgy</label>
-
-                                                        <div class="form-item-wrap">
-                                                            <input id="url" class="form-item" type="url"
-                                                                   name="crtSubject">
-                                                        </div>
-                                                    </div>
-
-                                                    <div class="form-group">
-                                                        <label class="form-label" for="comment">Üzenet</label>
-
-                                                        <div class="form-item-wrap">
-                                                            <textarea id="comment" class="form-item"
-                                                                      name="crtMessage"></textarea>
-                                                        </div>
-                                                    </div>
-
-                                                    <div class="form-group">
-                                                        <div class="form-item-wrap check-field">
-                                                            <input type="checkbox" name="crtPivacyPolicy"
-                                                                   id="crtPivacyPolicyWidget">
-                                                            <label for="crtPivacyPolicy">Elolvastam és megértettem az
-                                                                <span
-                                                                        class="tooltip"
-                                                                        data-tooltip="Egyelőre nincs ilyen. :)">Adatvédelmi Szabályzatot</span>.</label>
-                                                        </div>
-                                                    </div>
-                                                    <div class="input-field">
-                                                        <div class="g-recaptcha "
-                                                             data-sitekey="<?php echo $siteKey; ?>"></div>
-                                                        <script type="text/javascript"
-                                                                src="https://www.google.com/recaptcha/api.js?hl=<?php echo $lang; ?>"></script>
-                                                    </div>
-                                                    <div class="form-submit form-item-wrap">
-                                                        <input class="btn btn-primary btn-lg crtFormSubmit"
-                                                               type="submit"
-                                                               value="Küldés">
-                                                    </div>
-                                                </form>
-                                            </div>
-                                        </div>
-                                    </section>
-                                    <!-- END: PAGE CONTENT -->
-
-                                </div><!-- .container -->
-                            </div><!-- .content -->
-                            <div id="map" data-latitude="50.84592" data-longitude="4.366859999999974"></div>
-
+<!--                            <div class="content">-->
+<!--                                <div class="container">-->
+<!--                                    <section class="section section-text text-center">-->
+<!--                                        <div class="animate-up animated">-->
+<!--                                            <h2 class="section-title">You're not a bot? Aren't you?</h2>-->
+<!--                                            <div class="section-box">-->
+<!--                                                <h3>Congratulation!</h3>-->
+<!--                                                <p>Your email was sent successfully! <a href="index.html">Go Back</a>-->
+<!--                                                </p>-->
+<!--                                                <form action="php/mailsender.php" method="post" class="contact-form">-->
+<!---->
+<!--                                                    <div class="form-group">-->
+<!--                                                        <label class="form-label" for="author">Név</label>-->
+<!---->
+<!--                                                        <div class="form-item-wrap">-->
+<!--                                                            <input id="author" class="form-item" name="crtName"-->
+<!--                                                                   type="text">-->
+<!--                                                        </div>-->
+<!--                                                    </div>-->
+<!---->
+<!--                                                    <div class="form-group">-->
+<!--                                                        <label class="form-label" for="email">E-mail cím</label>-->
+<!---->
+<!--                                                        <div class="form-item-wrap">-->
+<!--                                                            <input id="email" class="form-item" type="email"-->
+<!--                                                                   name="crtEmail"-->
+<!--                                                                   required="required">-->
+<!--                                                        </div>-->
+<!--                                                    </div>-->
+<!---->
+<!--                                                    <div class="form-group">-->
+<!--                                                        <label class="form-label" for="url">Tárgy</label>-->
+<!---->
+<!--                                                        <div class="form-item-wrap">-->
+<!--                                                            <input id="url" class="form-item" type="url"-->
+<!--                                                                   name="crtSubject">-->
+<!--                                                        </div>-->
+<!--                                                    </div>-->
+<!---->
+<!--                                                    <div class="form-group">-->
+<!--                                                        <label class="form-label" for="comment">Üzenet</label>-->
+<!---->
+<!--                                                        <div class="form-item-wrap">-->
+<!--                                                            <textarea id="comment" class="form-item"-->
+<!--                                                                      name="crtMessage"></textarea>-->
+<!--                                                        </div>-->
+<!--                                                    </div>-->
+<!---->
+<!--                                                    <div class="form-group">-->
+<!--                                                        <div class="form-item-wrap check-field">-->
+<!--                                                            <input type="checkbox" name="crtPivacyPolicy"-->
+<!--                                                                   id="crtPivacyPolicyWidget">-->
+<!--                                                            <label for="crtPivacyPolicy">Elolvastam és megértettem az-->
+<!--                                                                <span-->
+<!--                                                                        class="tooltip"-->
+<!--                                                                        data-tooltip="Egyelőre nincs ilyen. :)">Adatvédelmi Szabályzatot</span>.</label>-->
+<!--                                                        </div>-->
+<!--                                                    </div>-->
+<!--                                                    <div class="input-field">-->
+<!--                                                        <div class="g-recaptcha "-->
+<!--                                                             data-sitekey="--><?php //echo $siteKey; ?><!--"></div>-->
+<!--                                                        <script type="text/javascript"-->
+<!--                                                                src="https://www.google.com/recaptcha/api.js?hl=--><?php //echo $lang; ?><!--"></script>-->
+<!--                                                    </div>-->
+<!--                                                    <div class="form-submit form-item-wrap">-->
+<!--                                                        <input class="btn btn-primary btn-lg crtFormSubmit"-->
+<!--                                                               type="submit"-->
+<!--                                                               value="Küldés">-->
+<!--                                                    </div>-->
+<!--                                                </form>-->
+<!--                                            </div>-->
+<!--                                        </div>-->
+<!--                                    </section>-->
+<!--                                    <!-- END: PAGE CONTENT -->-->
+<!---->
+<!--                                </div><!-- .container -->-->
+<!--                            </div><!-- .content -->-->
+<!--                            <div id="map" data-latitude="50.84592" data-longitude="4.366859999999974"></div>-->
+                            <div class="mapouter"><div class="gmap_canvas"><iframe width="770" height="510" id="gmap_canvas" src="https://maps.google.com/maps?q=Budapest&t=&z=10&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://2yu.co">2yu</a><br><style>.mapouter{position:relative;text-align:right;height:510px;width:770px;}</style><a href="https://embedgooglemap.2yu.co">html embed google map</a><style>.gmap_canvas {overflow:hidden;background:none!important;height:510px;width:770px;}</style></div></div>
                         </div>
                         <!-- .crt-paper-cont -->
                     </div>
