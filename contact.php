@@ -97,7 +97,7 @@
                     </div>
                     <div class="crt-side-box-btn">
                         <a class="btn btn-default btn-lg btn-block btn-thin btn-upper"
-                           href="assets/images/uploads/anettbillig_cv_hu.pdf" target="_blank"><span
+                           href="assets/images/uploads/billiganett_cv.pdf" target="_blank"><span
                                     class="crt-icon crt-icon-download"></span>Önéletrajz</a>
                     </div>
                 </div>
