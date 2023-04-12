@@ -79,7 +79,7 @@
 
                     <div class="crt-card bg-primary text-center">
                         <div class="crt-card-avatar">
-                            <img class="avatar-195" src="assets/images/uploads/avatar/ba_m2.jpg"
+                            <img class="avatar-195" src="assets/images/uploads/avatar/ba_mk.jpg"
                                  alt="">
                         </div>
                         <div class="crt-card-info">
